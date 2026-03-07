@@ -2,6 +2,23 @@
 
 # Lab | Practical Exercises with AI UI Tools
 
+### Requirements
+
+- Fork this repo
+- Clone this repo
+
+### Submission
+
+- Upon completion, run the following commands:
+
+```
+git add .
+git commit -m "done"
+git push origin [master/main]
+```
+
+- Create a Pull Request and submit your assignment.
+
 ## Exercise 1: AI‑Generated Landing Page
 
 *Goal*: Create a simple landing page using Copilot / ChatGPT / Lovable suggestions.
