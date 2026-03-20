@@ -178,10 +178,10 @@ Hazme una landing page con las siguientes caracteristicas: El objetivo o tema de
 </html>
 ```
 </details>
-Le añado manualmente 3 imagenes a las cards y ajusto con css.
-Le añado id a los nav para que nos lleven a las cards y hero.
-Pongo el header en fixed para continuidad en el scroll y añado función al botón inicio.
-Intento hacer trolleo operando con claude haciendo preguntas de hacer funcion para paginas infinitas, no parece muy dispuesta.
-Añade automaticamente funciones @media para pantallas.
-Pido a claude que añada responsive para 3 tipos de pantalla y testeo
-Revisando veo fallo en orden de aplicación del código según resoluciones
+Le añado manualmente 3 imagenes a las cards y ajusto con css. <br>
+Le añado id a los nav para que nos lleven a las cards y hero.<br>
+Pongo el header en fixed para continuidad en el scroll y añado función al botón inicio.<br>
+Intento hacer trolleo operando con claude haciendo preguntas de hacer funcion para paginas infinitas, no parece muy dispuesta.<br>
+Añade automaticamente funciones @media para pantallas.<br>
+Pido a claude que añada responsive para 3 tipos de pantalla y testeo.<br>
+Revisando veo fallo en orden de aplicación del código según resoluciones<br>
