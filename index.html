@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevención de Ahogamientos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        nav {
+            position: relative;
+        }
+
+        nav span{
+            opacity: 0;
+            margin-left: 50px;
+            position: absolute;
+            top: 0;
+            left: 20px;
+            bottom: 10px;
+        }
+
+        nav a:hover + span{
+            opacity: 1;
+            color: red;
+        }
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 12px 25px;
+            border: none;
+            background: #00b4d8;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .hero button:hover {
+            background: #0096c7;
+        }
+
+        /* CARDS */
+        
+
+        .cards img{
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #0077b6;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* RESPONSIVE */
+            /* ============================================
+   RESPONSIVE — TABLET / PORTÁTIL (hasta 1024px)
+============================================ */
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .cards {
+        padding: 40px 30px;
+        gap: 18px;
+    }
+
+    .card {
+        width: 260px;
+    }
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (hasta 768px)
+============================================ */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        min-width: 220px;
+    }
+
+    .cards {
+        padding: 40px 20px;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ============================================
+   RESPONSIVE — MÓVIL PEQUEÑO (hasta 480px)
+============================================ */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0.8rem 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        padding: 80px 15px 60px;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero button {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .cards {
+        padding: 30px 15px;
+        gap: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <h2>Seguridad Acuática</h2>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#cards">Consejos</a>
+            <a href="#hero">Prevención</a>
+            <a href="https://www.marketingbrew.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbl383u0v%2Fproduction%2Fb8bf3938336ab457e1045e90fe737ce0c59f1cde-1500x1000.jpg%3Fw%3D900%26h%3D600%26q%3D100%26fit%3Dmax%26auto%3Dformat%26dpr%3D1.25&w=1920&q=75" target="_blank">Contacto</a><span>juicy easter egg</span>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <h1>Prevención de Ahogamientos</h1>
+        <p>La seguridad en el agua salva vidas. Aprende cómo protegerte y proteger a otros.</p>
+        <button>Aprender más</button>
+    </section>
+
+    <!-- CARDS -->
+    <section class="cards" id="cards">
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1245624425/es/vector/icono-de-l%C3%ADnea-de-binoculares-concepto-oce%C3%A1nico-signo-binocular-sobre-fondo-blanco-icono-de.jpg?s=612x612&w=0&k=20&c=J5j991FFi_RiZxSG2PwQ2UPee3ek0I66dOcwdtcljR4=" alt="">
+            <h3>Supervisión constante</h3>
+            <p>Nunca dejes a niños solos cerca del agua. La vigilancia activa es clave para evitar accidentes.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://i.fbcd.co/products/resized/resized-1500-1000/icon-270622-15-5502bd871467ba4f5d938aeed8a31fada6f13ff26566b666b25b4cc9673de271.webp" alt="">
+            <h3>Aprende a nadar</h3>
+            <p>La educación acuática reduce significativamente el riesgo de ahogamiento en todas las edades.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.lifebuoys24.com/cdn/shop/files/00LB_ec55df71-9185-4958-9a8a-b95af62ce146.png?v=1739595493&width=713" alt="">
+            <h3>Uso de flotadores</h3>
+            <p>Utiliza chalecos salvavidas certificados en playas, piscinas o actividades acuáticas.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Prevención de Ahogamientos | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
